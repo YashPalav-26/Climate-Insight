@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="./images/title-icon.png" />
+    <title>Climate Insight</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <!-- Input field for city search -->
+      <div class="weather-header">
+        <form class="weather-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="city-name"
+            placeholder="Search your city..."
+          />
+        </form>
+      </div>
+      <!-- Main weather data -->
+      <div class="weather-body">
+        <h1 class="weather-city">City Name</h1>
+        <p class="weather-datetime">Day, Date, Time</p>
+        <div class="weather-data">
+          <p class="weather-forecast">Partly Cloudy</p>
+          <div class="weather-icon">
+            <img src="weather-icon.png" alt="Weather Icon" />
+          </div>
+        </div>
+        <p class="weather-temperature">25&#176;</p>
+        <div class="weather-minmax">
+          <p class="weather-min">Min: 20&#176;</p>
+          <p class="weather-max">Max: 30&#176;</p>
+        </div>
+      </div>
+      <!-- Additional weather information -->
+      <section class="weather-info">
+        <div class="weather-card">
+          <i class="fa-solid fa-temperature-high"></i>
+          <div>
+            <p>Feels Like</p>
+            <p class="weather-feelsLike">28&#176;</p>
+          </div>
+        </div>
+
+        <div class="weather-card">
+          <i class="fa-solid fa-droplet"></i>
+          <div>
+            <p>Humidity</p>
+            <p class="weather-humidity">65%</p>
+          </div>
+        </div>
+
+        <div class="weather-card">
+          <i class="fa-solid fa-wind"></i>
+          <div>
+            <p>Wind</p>
+            <p class="weather-wind">15 km/h</p>
+          </div>
+        </div>
+
+        <div class="weather-card">
+          <i class="fa-solid fa-gauge-high"></i>
+          <div>
+            <p>Pressure</p>
+            <p class="weather-pressure">1013 hPa</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
